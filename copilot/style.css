@@ -1,0 +1,110 @@
+/* Global */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #0f0f12, #1a1b20);
+    color: #fff;
+}
+
+/* Header */
+.header {
+    background: #bb0a04;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+.header h1 {
+    margin: 0;
+    font-size: 2rem;
+    animation: glow 2s infinite alternate;
+}
+@keyframes glow {
+    from { text-shadow: 0 0 10px #fff; }
+    to { text-shadow: 0 0 25px #ffd166, 0 0 40px #bb0a04; }
+}
+
+/* Products Table */
+.products table {
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background: rgba(255,255,255,0.05);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.products th, .products td {
+    padding: 15px;
+    text-align: center;
+}
+.products th {
+    background: rgba(187,10,4,0.8);
+    color: #fff;
+}
+.products tr:hover {
+    background: rgba(255,255,255,0.1);
+    transform: scale(1.02);
+    transition: 0.3s;
+}
+.products img {
+    max-height: 180px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    transition: transform 0.4s;
+}
+.products img:hover {
+    transform: rotateY(15deg) scale(1.05);
+}
+
+/* Links */
+.products a {
+    display: inline-block;
+    padding: 8px 12px;
+    background: #1f2025;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.products a:hover {
+    background: #bb0a04;
+    transform: translateY(-3px);
+}
+
+/* Form Section */
+.form-section {
+    background: #bb0a04;
+    padding: 30px;
+    text-align: center;
+    margin-top: 40px;
+}
+.form-section h2 {
+    margin-bottom: 20px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: auto;
+}
+form input, form button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+form input {
+    background: #fff;
+    color: #000;
+}
+form button {
+    background: #1f2025;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+form button:hover {
+    background: #ffd166;
+    color: #000;
+    transform: scale(1.05);
+}

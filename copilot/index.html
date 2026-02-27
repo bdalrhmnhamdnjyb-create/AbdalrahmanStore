@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdalrahman Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <h1>Abood Store</h1>
+    </header>
+
+    <!-- Products Table -->
+    <section class="products">
+        <table>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Image</th>
+                    <th>Price</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Iphone 17 Pro Max</td>
+                    <td><img src="iphone.jpg" alt="Iphone"></td>
+                    <td>$1200</td>
+                    <td><a href="https://www.apple.com/eg/iphone-17/" target="_blank">Go to the store</a></td>
+                </tr>
+                <tr>
+                    <td>Samsung Galaxy A17</td>
+                    <td><img src="sam.jpg" alt="Samsung A17"></td>
+                    <td>$200</td>
+                    <td><a href="https://www.samsung.com/eg/smartphones/galaxy-a/galaxy-a17-black-256gb-sm-a175fzkomea/" target="_blank">Go to the store</a></td>
+                </tr>
+                <tr>
+                    <td>Honor X9C</td>
+                    <td><img src="honor.jpg" alt="Honor X9C"></td>
+                    <td>$900</td>
+                    <td><a href="https://www.honor.com/eg/phones/honor-x9c/spec/" target="_blank">Go to the store</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Form -->
+    <section class="form-section">
+        <h2>Request Your Device Now</h2>
+        <form action="https://formsubmit.co/bdalrhmnhamdnjyb@gmail.com" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="dob">Date Of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+</body>
+</html>
